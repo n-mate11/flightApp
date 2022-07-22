@@ -28,6 +28,7 @@ export const HomeScreen = ({ navigation }) => {
       gate: 'A12',
       seat: '14B',
       class: 'Economy',
+      passengerName: 'Mate Nagy',
     },
     {
       id: 2,
@@ -43,6 +44,7 @@ export const HomeScreen = ({ navigation }) => {
       gate: 'A12',
       seat: '14B',
       class: 'Economy',
+      passengerName: 'Mate Nagy',
     },
     {
       id: 3,
@@ -58,6 +60,7 @@ export const HomeScreen = ({ navigation }) => {
       gate: 'A12',
       seat: '14B',
       class: 'Economy',
+      passengerName: 'Mate Nagy',
     },
     {
       id: 4,
@@ -73,6 +76,7 @@ export const HomeScreen = ({ navigation }) => {
       gate: 'A12',
       seat: '14B',
       class: 'Economy',
+      passengerName: 'Mate Nagy',
     },
   ];
   const renderItem = ({ item }) => {
@@ -151,7 +155,11 @@ export const HomeScreen = ({ navigation }) => {
                 <TextInput style={styles.searchTextInput} placeholder="" />
               </View>
             </View>
-            <WideButton containerStyles={styles.searchButton} text={'Search'} />
+            <WideButton
+              containerStyles={styles.searchButton}
+              text={'Search'}
+              onPress={() => navigation.navigate('Flights')}
+            />
           </View>
           <View style={[styles.upcomingWrapper, styles.flexRow]}>
             <Text style={styles.upcomingHeader}>Upcoming Flights</Text>
